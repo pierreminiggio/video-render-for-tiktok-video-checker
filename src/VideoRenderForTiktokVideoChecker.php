@@ -9,7 +9,7 @@ class VideoRenderForTiktokVideoChecker
     {
     }
 
-    protected function getRenderedVideoUrl(string $tikTokUrl): ?string
+    public function getRenderedVideoUrl(string $tikTokUrl): ?string
     {
 
         $curl = curl_init($this->spinnerApiUrl . '/tiktok-video-file');
